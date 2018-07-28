@@ -2,7 +2,7 @@ spring:
   h2:
     console:
       enabled: true
-      path: /console-h2
+      path: /console
       settings:
         trace: true
         web-allow-others: false
@@ -20,4 +20,13 @@ spring:
   devtools:
     livereload:
       enabled: true
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      
+custom:
+    property: test value refreshed
 
