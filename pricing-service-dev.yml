@@ -20,6 +20,12 @@ spring:
   devtools:
     livereload:
       enabled: true
+  boot:
+    admin:
+     client:
+        url: http://localhost:9092
+        username: admin
+        password: admin
       
 eureka:
   client:

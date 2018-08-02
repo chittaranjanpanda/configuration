@@ -20,6 +20,12 @@ spring:
   devtools:
     livereload:
       enabled: true
+  boot:
+    admin:
+     client:
+        url: http://localhost:9092
+        username: admin
+        password: admin
 
 eureka:
   client:
@@ -30,6 +36,7 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
+  
       
 management:
   endpoints:
@@ -37,5 +44,5 @@ management:
       exposure:
         include: "*"    
 custom:
-    property: test value refreshed
+    property: test value
 
