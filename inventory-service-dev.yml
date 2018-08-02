@@ -36,6 +36,7 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
+    instance-id: ${spring.application.name}${random.uuid}
   
       
 management:
